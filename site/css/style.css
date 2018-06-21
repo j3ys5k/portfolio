@@ -1,0 +1,468 @@
+/*
+HTML5 Reset
+---------------------------------------------------------------------------------------------------- */
+/* Baseline Reset (normalize.css 2.1.2)
+	normalize.css v2.1.2 | MIT License | git.io/normalize
+--------------------------------------------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block; }
+  
+  audio, canvas, video {
+    display: inline-block; }
+  
+  audio:not([controls]) {
+    display: none;
+    height: 0; }
+  
+  [hidden] {
+    display: none; }
+  
+  html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; }
+  
+  body {
+    margin: 0; }
+  
+  a:focus {
+    outline: thin solid; }
+  
+  a:active, a:hover {
+    outline: 0; }
+  
+  h1 {
+    font-size: 2em;
+    margin: .67em 0; }
+  
+  abbr[title] {
+    border-bottom: 1px solid; }
+  
+  b, strong {
+    font-weight: bold; }
+  
+  dfn {
+    font-style: italic; }
+  
+  hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0; }
+  
+  mark {
+    background: #ff0;
+    color: #555; }
+  
+  code, kbd, pre, samp {
+    font-family: monospace,serif;
+    font-size: 1em; }
+  
+  pre {
+    white-space: pre-wrap; }
+  
+  q {
+    quotes: "\201C" "\201D" "\2018" "\2019"; }
+  
+  small {
+    font-size: 80%; }
+  
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline; }
+  
+  sup {
+    top: -0.5em; }
+  
+  sub {
+    bottom: -0.25em; }
+  
+  img {
+    border: 0; }
+  
+  svg:not(:root) {
+    overflow: hidden; }
+  
+  figure {
+    margin: 0; }
+  
+  fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em; }
+  
+  legend {
+    border: 0;
+    padding: 0; }
+  
+  button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0; }
+  
+  button, input {
+    line-height: normal; }
+  
+  button, select {
+    text-transform: none; }
+  
+  button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer; }
+  
+  button[disabled], html input[disabled] {
+    cursor: default; }
+  
+  input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0; }
+  
+  input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box; }
+  
+  input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+  
+  button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+  
+  textarea {
+    overflow: auto;
+    vertical-align: top; }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  
+  /* Box Sizing
+  --------------------------------------------- */
+  *,
+  input[type="search"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  /* Float Clearing
+  --------------------------------------------- */
+  .archive-pagination:before,
+  .clearfix:before,
+  .entry-content:before,
+  .entry-pagination:before,
+  .entry:before,
+  .footer-widgets:before,
+  .nav-primary:before,
+  .nav-secondary:before,
+  .site-container:before,
+  .site-footer:before,
+  .site-header:before,
+  .site-inner:before,
+  .widget:before,
+  .wrap:before {
+    content: " ";
+    display: table; }
+  
+  .archive-pagination:after,
+  .clearfix:after,
+  .entry-content:after,
+  .entry-pagination:after,
+  .entry:after,
+  .footer-widgets:after,
+  .nav-primary:after,
+  .nav-secondary:after,
+  .site-container:after,
+  .site-footer:after,
+  .site-header:after,
+  .site-inner:after,
+  .widget:after,
+  .wrap:after {
+    clear: both;
+    content: " ";
+    display: table; }
+
+
+/* Fonts
+--------------------------------------------- */
+@font-face {
+    font-family: 'inconsolataregular';
+    src: url('../fonts/inconsolata-regular-webfont.woff2') format('woff2'),
+         url('../fonts/inconsolata-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'acremedium';
+    src: url('../fonts/acre-medium-webfont.woff2') format('woff2'),
+         url('../fonts/acre-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Typography
+--------------------------------------------- */
+
+body {
+    color:white;
+    font-family:'inconsolataregular','courier new';
+    font-size:17px;
+    background: #005779 url("../images/bg-pattern.png") repeat; 
+}
+
+h1, h2, h3, h4, h5 {
+    font-family:'acremedium',sans-serif;
+    font-weight:normal;
+}
+
+h1 {
+    font-size:105px;
+    text-align:center;
+    font-weight:600;
+    margin-top:0;
+    letter-spacing:2px;
+}
+
+h2 {
+    font-size:48px; 
+    text-align:center;
+    margin-top:0;
+}
+
+h3 {
+    font-size:28px;
+}
+
+
+
+p {
+    line-height:28px;
+    text-align:center;
+    color:#e8e7e7;
+}
+
+a { 
+  color:white; 
+  
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+
+.text-center {
+    text-align:center;
+}
+
+.text-left {
+    text-align:left;
+}
+
+
+
+/* Spacing
+--------------------------------------------- */
+
+.container {
+    padding-left:20px;
+    padding-right:20px;
+    max-width:855px;
+    margin-left:auto;
+    margin-right:auto;
+    
+    
+}
+
+section {
+    padding:1.7rem 0 1.7rem 0;
+}
+
+.mb--m {
+  margin-bottom:2.3em;
+}
+
+.mb--l {
+  margin-bottom:3.3em;
+}
+
+
+/* Menu
+--------------------------------------------- */
+
+.menu {
+    display:flex;
+    align-items:center;
+    list-style-type:none;
+    padding-left:0;
+}
+
+.menu a {text-decoration:none;}
+.menu a:hover {text-decoration:underline;}
+.menu .item {margin-right:5%;}
+.menu .item.last {margin-right:0;}
+.logo {margin-right:auto;}
+
+
+/* Overall Styles
+--------------------------------------------- */
+
+
+hr {
+    border-top:1px solid #307895;
+    color:#307895;
+    background-color:#307895;
+    border-bottom:1px solid #074c69;
+}
+
+
+
+
+/* Web Skils
+--------------------------------------------- */
+
+.web-skills h3 {
+    margin-top:3.2rem;
+    margin-bottom:2.2rem;
+}
+
+
+.samples__grid {
+    display:grid;
+    grid-template-columns:33% 33% 33%; 
+}
+
+.samples__grid h4 {
+    text-align:center;
+    font-weight:normal;
+    font-family:'inconsolataregular','courier new';
+    font-size:22px;
+}
+
+.samples__item {
+ margin-left:auto;
+ margin-right:auto;
+ cursor:pointer;
+ text-decoration:none;
+
+
+}
+
+.samples__item:hover {
+  text-decoration:underline;
+}
+
+.icon-dribble, .icon-github, .icon-resume, svg {cursor:pointer;}
+
+.skillbar-grid {
+    display:grid;
+    grid-template-columns:40% 60%;
+    margin-bottom:1.7rem; 
+}
+
+.skillbar-grid p {
+    margin:0;
+    text-align:left;
+}
+
+.bar-outline {
+    height:24px;
+    border:1px solid white;
+}
+
+.bar-fill {
+   height:22px;
+   background-color:white;
+}
+
+.one {
+    width:10%;
+}
+.two{
+    width:20%;
+}
+.three{
+    width:30%;
+}
+.four{
+    width:40%;
+}
+.five{
+    width:50%;
+}
+.six{
+    width:60%;
+}
+.seven{
+    width:70%;
+}
+.eight{
+    width:80%;
+}
+.nine{
+    width:90%;
+}
+
+/* Contact
+--------------------------------------------- */
+
+.contact-grid {
+    display:grid;
+    grid-template-columns:50% 50%; 
+}
+
+
+/* Icons (for more icon styles see the icon-style.css stylesheet
+--------------------------------------------- */
+
+.contact-icon-container {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+}
+
+.contact-icon-container:hover {
+  text-decoration:underline;
+}
+
+.icon-envelope, .icon-linkedin {
+   margin-right:1em;
+}
+
+
+
+
+@media only screen and (max-width: 550px) {
+  h1{ font-size:76px; }
+
+  .samples__grid {
+    display:grid;
+    grid-template-columns:100%;
+  }
+
+  .samples__item {
+    margin-bottom:2.3em;
+  }
+  .contact-grid {
+    display:grid;
+    grid-template-columns:100% ; 
+    }
+
+  .contact-icon-container {
+      justify-content:left;
+      margin-bottom:2.3em;
+    }
+
+}
+
+
+
+ 
+
+

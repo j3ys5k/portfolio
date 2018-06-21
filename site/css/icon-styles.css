@@ -1,0 +1,10 @@
+/* This file is because SVG icons are super dumb and it is the only way it can be controlled with an external stylesheet */
+
+
+
+
+
+.iconEnvelope {display:flex;cursor:pointer;}
+.iconEnvelope__path {color:white; background-color:white; fill:white; cursor:pointer; }
+
+/*.icon-dribble__path {color:white;} */
